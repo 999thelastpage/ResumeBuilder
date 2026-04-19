@@ -3,6 +3,8 @@
 > **A privacy-first, AI-powered resume modernization utility.**
 > Upload an old PDF/DOCX, let Gemini parse it into a structured editor, pick a template, and download — all in one session. No account required. No files stored.
 
+**[🚀 Live Demo: freeresume.site](https://freeresume.site/)**
+
 ---
 
 ## Table of Contents
