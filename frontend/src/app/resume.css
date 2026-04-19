@@ -23,6 +23,7 @@
 .name { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; color: #1a1a1a; margin: 0; }
 .title { font-size: 1.05rem; font-weight: 400; color: #555; margin: 4px 0 12px; }
 .contact-row { display: flex; flex-wrap: wrap; gap: 6px; font-size: 0.85rem; color: #666; margin-bottom: 6px; }
+.contact-row span { overflow-wrap: anywhere; }
 .contact-row .sep { color: #ccc; margin: 0 2px; }
 .link-row { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.85rem; }
 .link-row a { color: var(--brand, #4a6fa5); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
@@ -126,8 +127,8 @@
 }
 
 .mod-contact-list { font-size: 0.82rem; }
-.mod-contact-item { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; opacity: 0.9; }
-.mod-icon { font-size: 0.9rem; width: 16px; text-align: center; }
+.mod-contact-item { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; opacity: 0.9; overflow-wrap: anywhere; }
+.mod-icon { font-size: 0.9rem; width: 16px; text-align: center; flex-shrink: 0; }
 
 .mod-links { flex-direction: column; gap: 4px; }
 .mod-links a { color: rgba(255,255,255,0.9); font-size: 0.82rem; }

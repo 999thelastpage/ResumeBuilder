@@ -36,6 +36,17 @@ No login. No cloud storage of your resume. No data sent anywhere beyond what is 
 
 ---
 
+## Screenshots
+
+### 🏠 Landing Page
+![Landing Page](docs/images/landing.png)
+
+### ✏️ Live Side-by-Side Editor
+![Modern Tech Template](docs/images/editor-modern.png)
+![Minimalist Template](docs/images/editor-minimalist.png)
+
+---
+
 ## Key Features
 
 | Feature | Details |
@@ -438,3 +449,9 @@ If this tool saved you time, consider buying a coffee:
 - 🇮🇳 **UPI (India):** `yourusername@upi`
 
 Both options are available directly in the sidebar of the app.
+
+---
+
+## License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
