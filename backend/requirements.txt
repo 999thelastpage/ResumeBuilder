@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+google-genai
+python-docx
+PyMuPDF
+python-dotenv
+supabase
+playwright
+slowapi

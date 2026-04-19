@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-http://localhost:8000}
+        - NEXT_PUBLIC_KOFI_URL=${NEXT_PUBLIC_KOFI_URL:-https://ko-fi.com/username}
+        - NEXT_PUBLIC_UPI_ID=${NEXT_PUBLIC_UPI_ID:-username@oksbi}
+        - NEXT_PUBLIC_UPI_NAME=${NEXT_PUBLIC_UPI_NAME:-CV Modernizer}
+    container_name: cv-modernizer-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL:-http://localhost:8000}
+      - NEXT_PUBLIC_KOFI_URL=${NEXT_PUBLIC_KOFI_URL:-https://ko-fi.com/username}
+      - NEXT_PUBLIC_UPI_ID=${NEXT_PUBLIC_UPI_ID:-username@oksbi}
+      - NEXT_PUBLIC_UPI_NAME=${NEXT_PUBLIC_UPI_NAME:-CV Modernizer}
+    restart: unless-stopped
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend
+    container_name: cv-modernizer-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    environment:
+      - ALLOWED_ORIGINS=${FRONTEND_URL:-http://localhost:3000}
+    restart: unless-stopped
